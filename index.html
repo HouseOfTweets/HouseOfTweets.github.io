@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HoT Vogelauswahl</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for grid styling -->
+    <link href="css/grid.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
   <body>
-    <h1>House-of-tweets</h1>
-    <h2>Hello World</h2>
-    <p>This is totally hello world.</p>
-    <p>Yup.</p>
-    <h2>Nothing to see here</h2>
-    <p>Absolutely nothing.</p>
+    <div class="container">
+      <div class="page-header">
+        <h1>House of Tweets Vogelauswahl</h1>
+        <p class="lead">Dies ist eine vollständige Übersicht über alle Vogelstimmen,
+        die im Rahmen des Projects House of Tweets zur Verfügung stehen.</p>
+      </div>
+
+      <!-- Implicit <hr> -->
+
+      <h3>Funktionsweise</h3>
+      <p>Jedem Bundestagsabgeordneten wurde eine Vogelstimme zugeordnet.
+      Diese können sie ganz leicht ändern! Ein Klick auf einen untenstehenden Vogel,
+      ein abgesetzter Tweet, und schon erkennen unsere Systeme ihren Änderungswunsch!</p>
+      <p>Der Tweet muss nur den Vogel und das Hastag <strong>#HouseOfTweets</strong> enthalten.
+      Oder <strong>#Hot</strong>, wem das zu lang ist.</p>
+
+      <hr>
+
+      <h3 id="liste">Vogelliste</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%201%20%23HoT">Hallo Welt 1</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%202%20%23HoT">Hallo Welt 2</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%203%20%23HoT">Hallo Welt 3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%204%20%23HoT">Hallo Welt 4</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%205%20%23HoT">Hallo Welt 5</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%206%20%23HoT">Hallo Welt 6</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%207%20%23HoT">Hallo Welt 7</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%208%20%23HoT">Hallo Welt 8</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%209%20%23HoT">Hallo Welt 9</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2010%20%23HoT">Hallo Welt 10</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2011%20%23HoT">Hallo Welt 11</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2012%20%23HoT">Hallo Welt 12</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2013%20%23HoT">Hallo Welt 13</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2014%20%23HoT">Hallo Welt 14</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2015%20%23HoT">Hallo Welt 15</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2016%20%23HoT">Hallo Welt 16</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2017%20%23HoT">Hallo Welt 17</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2018%20%23HoT">Hallo Welt 18</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2019%20%23HoT">Hallo Welt 19</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbenwiederhake.github.io%2FHouse-Of-Tweets%2F&text=Ich%20will%20klingen%20wie%20ein%20Weißkopfseeadler%21%2020%20%23HoT">Hallo Welt 20</div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
