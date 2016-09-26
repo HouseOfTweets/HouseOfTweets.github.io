@@ -23,3 +23,8 @@ hr {
 body {
   padding-top: 70px;
 }
+.custom-nav-flag {
+  /* Don't increase navbar's overall height. */
+  margin-bottom: -15px;
+  margin-top: -15px;
+}
