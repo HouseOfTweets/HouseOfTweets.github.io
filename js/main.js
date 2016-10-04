@@ -74,7 +74,7 @@
     birds: null,
     nextBirdIdx: 0,
     init: function() {
-      var lang, lang_tag, lang_tags;
+      var i, lang, lang_tag, lang_tags, results;
       console.log("Auto-detect language");
       lang_tags = $("ul.navbar-right > li.active img");
       lang_tag = $(lang_tags[0]);
@@ -83,19 +83,30 @@
         "Deutsch": RawBirds_de,
         "English": RawBirds_en
       }[lang];
-      return $.onInfiniteScroll((function() {
+      $.onInfiniteScroll((function() {
         return BirdFeeder.push();
       }), {
-        offset: 202 + 20
+        offset: 397 + 20
       });
+      results = [];
+      for (i = 1; i <= 4; i++) {
+        results.push($(window).trigger('scroll.infinite'));
+      }
+      return results;
     },
     push: function() {
-      var bid, name, ref;
+      var bid, i, name, ref, results;
       if (this.nextBirdIdx < this.birds.length) {
         ref = this.birds[this.nextBirdIdx], bid = ref[0], name = ref[1];
         this.nextBirdIdx += 1;
-        return placeBird(name, bid);
+        placeBird(name, bid);
+        results = [];
+        for (i = 1; i <= 4; i++) {
+          results.push($(window).trigger('scroll.infinite'));
+        }
+        return results;
       } else {
+        $("#hot-load-gif").remove();
         return $.destroyInfiniteScroll();
       }
     }
